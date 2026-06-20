@@ -8,7 +8,7 @@ export default function ThemeToggle({ dark, onToggle }: Props) {
     <button
       onClick={onToggle}
       className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors"
-      aria-label={dark ? '切换到亮色主题' : '切换到暗色主题'}
+      aria-label={dark ? 'Switch to light theme' : 'Switch to dark theme'}
     >
       {dark ? (
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

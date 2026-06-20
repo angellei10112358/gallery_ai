@@ -32,7 +32,7 @@ export default function GalleryGrid({ images }: Props) {
   if (images.length === 0) {
     return (
       <div className="text-center py-20 text-gray-500 dark:text-gray-400">
-        没有匹配的图片
+        No matching images
       </div>
     )
   }
@@ -50,7 +50,7 @@ export default function GalleryGrid({ images }: Props) {
             onClick={() => setPage((p) => p + 1)}
             className="px-6 py-3 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors"
           >
-            加载更多 ({images.length - displayImages.length} 张)
+            Load more ({images.length - displayImages.length})
           </button>
         </div>
       )}

@@ -40,7 +40,7 @@ export default function App() {
   if (error) {
     return (
       <div className="min-h-screen flex items-center justify-center text-red-500">
-        加载失败: {error}
+        Failed to load: {error}
       </div>
     )
   }

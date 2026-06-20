@@ -6,10 +6,10 @@ interface Props {
 }
 
 const OPTIONS: { value: SortMode; label: string }[] = [
-  { value: 'newest', label: '最新' },
-  { value: 'oldest', label: '最早' },
-  { value: 'random', label: '随机' },
-  { value: 'name', label: '按名称' },
+  { value: 'newest', label: 'Newest' },
+  { value: 'oldest', label: 'Oldest' },
+  { value: 'random', label: 'Random' },
+  { value: 'name', label: 'By name' },
 ]
 
 export default function SortSelector({ value, onChange }: Props) {

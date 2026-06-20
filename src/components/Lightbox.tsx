@@ -103,7 +103,7 @@ export default function Lightbox({ images, currentIndex, onClose, onChange }: Pr
       <button
         onClick={onClose}
         className="absolute top-4 right-4 z-10 p-2 text-white/80 hover:text-white transition-colors"
-        aria-label="关闭"
+        aria-label="Close"
       >
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -113,7 +113,7 @@ export default function Lightbox({ images, currentIndex, onClose, onChange }: Pr
       <button
         onClick={() => onChange((currentIndex - 1 + images.length) % images.length)}
         className="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-2 text-white/60 hover:text-white transition-colors"
-        aria-label="上一张"
+        aria-label="Previous"
       >
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -123,7 +123,7 @@ export default function Lightbox({ images, currentIndex, onClose, onChange }: Pr
       <button
         onClick={() => onChange((currentIndex + 1) % images.length)}
         className="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-2 text-white/60 hover:text-white transition-colors"
-        aria-label="下一张"
+        aria-label="Next"
       >
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -159,7 +159,7 @@ export default function Lightbox({ images, currentIndex, onClose, onChange }: Pr
           <button
             onClick={() => setShowInfo((v) => !v)}
             className="ml-4 p-2 text-white/60 hover:text-white transition-colors shrink-0"
-            aria-label="图片信息"
+            aria-label="Image info"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -168,13 +168,13 @@ export default function Lightbox({ images, currentIndex, onClose, onChange }: Pr
         </div>
         {showInfo && (
           <div className="mt-2 text-sm text-gray-300 space-y-1">
-            <p>文件名: {img.filename}</p>
-            <p>尺寸: {img.width} × {img.height}</p>
-            <p>大小: {fileSizeMB} MB</p>
-            <p>日期: {img.date}</p>
-            {img.model && <p>模型: {img.model}</p>}
-            {img.prompt && <p>提示词: {img.prompt}</p>}
-            {img.tags.length > 0 && <p>标签: {img.tags.join(', ')}</p>}
+            <p>File: {img.filename}</p>
+            <p>Size: {img.width} × {img.height}</p>
+            <p>Weight: {fileSizeMB} MB</p>
+            <p>Date: {img.date}</p>
+            {img.model && <p>Model: {img.model}</p>}
+            {img.prompt && <p>Prompt: {img.prompt}</p>}
+            {img.tags.length > 0 && <p>Tags: {img.tags.join(', ')}</p>}
           </div>
         )}
       </div>
@@ -188,7 +188,7 @@ export default function Lightbox({ images, currentIndex, onClose, onChange }: Pr
           onClick={resetTransform}
           className="absolute top-4 left-1/2 -translate-x-1/2 z-10 px-3 py-1 rounded bg-white/20 text-white text-sm hover:bg-white/30 transition-colors"
         >
-          重置 ({Math.round(zoom * 100)}%)
+          Reset ({Math.round(zoom * 100)}%)
         </button>
       )}
     </div>

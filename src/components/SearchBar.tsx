@@ -9,7 +9,7 @@ export default function SearchBar({ value, onChange }: Props) {
       type="search"
       value={value}
       onChange={(e) => onChange(e.target.value)}
-      placeholder="搜索图片..."
+      placeholder="Search images..."
       className="w-full sm:w-64 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
     />
   )
