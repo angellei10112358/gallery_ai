@@ -1,0 +1,11 @@
+{
+  "siteTitle": "AI 作品集",
+  "author": "AngelLei",
+  "bio": "AI 生成图片作品展示",
+  "githubUrl": "https://github.com/angellei10112358/gallery_ai",
+  "defaultTheme": "dark",
+  "layout": "masonry",
+  "watermark": { "enabled": false, "text": "" },
+  "disableRightClick": false,
+  "sortDefault": "newest"
+}
